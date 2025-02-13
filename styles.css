@@ -30,7 +30,7 @@ h1 {
     justify-content: center; /* Centers buttons horizontally */
     align-items: center; /* Centers buttons vertically */
     gap: 150px; /* Adds space between buttons */
-    margin-top: 50px; /* Adds space above the buttons */
+    margin-top: 70px; /* Adds space above the buttons */
 }
 
 button {
