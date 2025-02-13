@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Will you be my valentine?</title>
+    <link rel="icon" type="image/png" href="pictures/heart_icon.png">
+</head>
+<body>
+
+<h1>Do you wanna go on a date with me?</h1>
+
+<div class="container"> 
+    <img id="gifImage" src="pictures/spongebob_happy.gif" alt="happy GIF" width="700" height="600">
+</div>
+
+<div class="button-container">
+    <button onclick="changeGif('yes')">YES!</button>
+    <button onclick="changeGif('no')">NO....</button>
+</div>
+
+<script>
+    function changeGif(response) {
+        let gifImage = document.getElementById("gifImage");
+
+        if (!gifImage) {
+            console.error("GIF image not found!");
+            return;
+        }
+
+        if (response === 'yes') {
+            gifImage.src = "pictures/dancing.gif"; // Change this to the new "Yes" GIF
+        } else {
+            gifImage.src = "pictures/stitch_sad.gif"; // Change this to the new "No" GIF
+        }
+    }
+</script>
+
+</body>
+</html>

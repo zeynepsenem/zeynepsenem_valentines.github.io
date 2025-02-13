@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(90deg, rgb(233, 57, 57), rgb(246, 99, 153));
+    background-size: 400% 400%;
+    animation: gradientMove 6s infinite alternate;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 150px;
+    color: rgb(4, 0, 0); /* Text color for better visibility */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 50vh; /* Makes the container fill the half of the viewport height */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Centers buttons vertically */
+    gap: 150px; /* Adds space between buttons */
+    margin-top: 50px; /* Adds space above the buttons */
+}
+
+button {
+    background-color: #05b8f9; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    padding: 30px 60px; /* Adjust button size */
+    font-size: 25px; /* Font size inside button */
+    cursor: pointer;
+}
